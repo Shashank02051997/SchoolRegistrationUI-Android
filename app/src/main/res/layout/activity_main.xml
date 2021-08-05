@@ -27,7 +27,6 @@
         android:layout_above="@+id/imageView"
         android:layout_centerHorizontal="true"
         android:drawablePadding="8dp"
-        android:drawableRight="@drawable/star"
         android:fontFamily="@font/gotham"
         android:shadowColor="#57000000"
         android:shadowDx="4"
@@ -37,7 +36,8 @@
         android:textAlignment="center"
         android:textColor="#000000"
         android:textSize="36sp"
-        android:textStyle="bold" />
+        android:textStyle="bold"
+        app:drawableRightCompat="@drawable/star" />
 
 
     <ImageView
@@ -72,8 +72,8 @@
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="40dp"
         android:fontFamily="@font/gotham"
-        android:paddingBottom="8dp"
         android:paddingTop="8dp"
+        android:paddingBottom="8dp"
         android:shadowColor="#57000000"
         android:shadowDx="3"
         android:shadowDy="3"

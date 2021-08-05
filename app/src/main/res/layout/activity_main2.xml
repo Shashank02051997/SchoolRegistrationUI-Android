@@ -33,21 +33,20 @@
                 android:id="@+id/back"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:drawableLeft="@drawable/ic_keyboard_arrow_left_black_24dp"
+                android:layout_marginTop="32dp"
+                android:layout_marginBottom="32dp"
                 android:fontFamily="@font/gotham"
+                android:gravity="center"
                 android:shadowColor="#57000000"
                 android:text="@string/register_text"
                 android:textAlignment="center"
-                android:gravity="center"
                 android:textColor="#000000"
                 android:textSize="28sp"
                 android:textStyle="bold"
-                android:layout_marginTop="32dp"
-                android:layout_marginBottom="32dp"/>
+                app:drawableLeftCompat="@drawable/ic_keyboard_arrow_left_black_24dp" />
 
 
-
-            <android.support.design.widget.TextInputLayout
+            <com.google.android.material.textfield.TextInputLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="16dp"
@@ -62,9 +61,9 @@
                     android:textColor="#000000"
                     android:textSize="18sp" />
 
-            </android.support.design.widget.TextInputLayout>
+            </com.google.android.material.textfield.TextInputLayout>
 
-            <android.support.design.widget.TextInputLayout
+            <com.google.android.material.textfield.TextInputLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="16dp"
@@ -79,16 +78,16 @@
                     android:textColor="#000000"
                     android:textSize="18sp" />
 
-            </android.support.design.widget.TextInputLayout>
+            </com.google.android.material.textfield.TextInputLayout>
 
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:weightSum="100"
-                android:orientation="horizontal">
+                android:orientation="horizontal"
+                android:weightSum="100">
 
-                <android.support.design.widget.TextInputLayout
+                <com.google.android.material.textfield.TextInputLayout
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="16dp"
@@ -104,15 +103,15 @@
                         android:textColor="#000000"
                         android:textSize="18sp" />
 
-                </android.support.design.widget.TextInputLayout>
+                </com.google.android.material.textfield.TextInputLayout>
 
-                <android.support.design.widget.TextInputLayout
+                <com.google.android.material.textfield.TextInputLayout
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="16dp"
-                    android:layout_weight="33.3"
                     android:layout_marginLeft="4dp"
+                    android:layout_marginTop="16dp"
                     android:layout_marginRight="4dp"
+                    android:layout_weight="33.3"
                     android:textColorHint="#000000">
 
                     <EditText
@@ -124,9 +123,9 @@
                         android:textColor="#000000"
                         android:textSize="18sp" />
 
-                </android.support.design.widget.TextInputLayout>
+                </com.google.android.material.textfield.TextInputLayout>
 
-                <android.support.design.widget.TextInputLayout
+                <com.google.android.material.textfield.TextInputLayout
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="16dp"
@@ -142,11 +141,11 @@
                         android:textColor="#000000"
                         android:textSize="18sp" />
 
-                </android.support.design.widget.TextInputLayout>
+                </com.google.android.material.textfield.TextInputLayout>
 
             </LinearLayout>
 
-            <android.support.design.widget.TextInputLayout
+            <com.google.android.material.textfield.TextInputLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="16dp"
@@ -161,9 +160,9 @@
                     android:textColor="#000000"
                     android:textSize="18sp" />
 
-            </android.support.design.widget.TextInputLayout>
+            </com.google.android.material.textfield.TextInputLayout>
 
-            <android.support.design.widget.TextInputLayout
+            <com.google.android.material.textfield.TextInputLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="16dp"
@@ -178,27 +177,26 @@
                     android:textColor="#000000"
                     android:textSize="18sp" />
 
-            </android.support.design.widget.TextInputLayout>
+            </com.google.android.material.textfield.TextInputLayout>
 
             <Button
                 android:layout_width="210dp"
                 android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="44dp"
+                android:layout_marginBottom="16dp"
                 android:background="@drawable/buttonshape"
                 android:fontFamily="@font/gotham"
                 android:text="Sign up"
-                android:layout_gravity="center"
                 android:textAllCaps="false"
                 android:textColor="#ffffff"
                 android:textSize="18sp"
-                android:layout_marginTop="44dp"
-                android:layout_marginBottom="16dp"
                 android:textStyle="bold" />
 
 
         </LinearLayout>
 
     </ScrollView>
-
 
 
 </RelativeLayout>
